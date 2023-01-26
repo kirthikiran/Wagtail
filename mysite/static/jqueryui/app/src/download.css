@@ -1,0 +1,292 @@
+
+/* jqueryui.com site overrides for DB */
+
+#download-builder-content {
+	float: left;
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#download-builder-content h1 {
+	text-align: center;
+	font: normal 36px/36px "Proxima-Nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: -1px;
+}
+
+#download-builder-content * {
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+}
+
+#download-builder-content p {
+	margin: 1em 0;
+}
+
+#download-builder-content input[type="text"],
+#download-builder-content textarea {
+	margin: 0;
+	min-width: 0;
+	padding: 0;
+}
+
+/* DB application styles */
+
+#download-builder-content {
+	float: left;
+	padding: 0 0 70px;
+	width: 100%;
+}
+
+#download-builder {
+	font-size: 10px;
+	padding: 10px 0 20px 30px;
+}
+#download-builder button,
+#download-builder input,
+#download-builder select,
+#download-builder textarea {
+	font-size: 15px;
+	line-height: 20px;
+}
+#download-builder * {
+	color: #000000;
+	font-family: "Trebuchet MS",Verdana,sans-serif;
+	margin: 0;
+	padding: 0;
+}
+#download-builder ul {
+	list-style-type: none;
+}
+#download-builder h1 {
+	font-size: 2.7em;
+	margin: 0.6em 0 0.1em;
+}
+#download-builder h2 {
+	color: #E6820E;
+	font-size: 1.4em;
+}
+#download-builder h4 {
+	color: #333333;
+	font-size: 1em;
+	margin: 0 0 0.2em;
+	text-transform: uppercase;
+}
+#download-builder p,
+#download-builder li {
+	font-size: 1.2em;
+	line-height: 1.3;
+}
+#download-builder p.intro,
+#download-builder p.bundle-links {
+	color: #666666;
+	font-size: 1.5em;
+	line-height: 1.5;
+	margin: 1em 0;
+}
+#download-builder p.bundle-links {
+	font-size: 1.2em;
+}
+#download-builder p.bundle-links strong {
+	color: #333333;
+	font-weight: bold;
+}
+#download-builder p.bundle-links em {
+	color: #666666;
+}
+#download-builder img#download_builder_icon {
+	float: right;
+	margin-right: 20px;
+}
+#download-builder a:link, #download-builder a:visited {
+	color: #1B75BB;
+	text-decoration: none;
+}
+#download-builder a:hover, #download-builder a:active {
+	color: #0B559B;
+	text-decoration: underline;
+}
+.download-builder-content {
+	clear: both;
+	margin: 3em 0 1em;
+}
+.download-builder-components {
+	border-top: 1px solid #999999;
+	float: left;
+	padding: 10px 0;
+	width: 670px;
+}
+.download-builder-settings {
+	background: none repeat scroll 0 0 #FFFAE5;
+	border-bottom: 1px dotted #666666;
+	border-top: 1px solid #999999;
+	float: right;
+	margin-right: 20px;
+	padding: 20px 0 30px;
+	width: 200px;
+}
+#download-builder .download-builder-header {
+	border-bottom: 1px dotted #666666;
+	padding: 10px 15px 15px;
+	position: relative;
+}
+#download-builder .download-builder-header h2 em {
+	color: #666666;
+	font-size: 0.9em;
+	font-style: normal;
+	font-weight: normal;
+}
+#download-builder .select-all {
+	background: url("../images/select_all_icon.png") no-repeat scroll 0 2px transparent;
+	font-size: 1.1em;
+	padding-left: 12px;
+	position: absolute;
+	right: 15px;
+	top: 12px;
+}
+#download-builder .components {
+	width: 100%;
+	position: relative;
+}
+#download-builder .component-group {
+	clear: both;
+	border: none;
+	border-bottom: 1px dotted #666666;
+}
+#download-builder .component-group > div {
+	float: left;
+	position: relative;
+	padding: 3% 2% 2%;
+}
+#download-builder .component-group-desc {
+	width: 25.25%;
+}
+#download-builder .component-group-list {
+	width: 65.25%;
+}
+#download-builder .component-group-desc h3 {
+	font-size: 1.5em;
+}
+#download-builder .component-group-desc p {
+	color: #666666;
+	font-size: 1.2em;
+	margin: 1.8% 0;
+	width: 70%;
+}
+#download-builder .component-group-list > div {
+	clear: both;
+	width: 100%;
+}
+#download-builder .component-group-list > div > * {
+	float: left;
+}
+#download-builder .component-group-list > div input {
+	margin: 1% 1% 1% 0;
+}
+#download-builder .component-group-list > div label {
+	margin: 1% 0%;
+	width: 89%;
+}
+#download-builder span.component-title {
+	font-size: 1.2em;
+	line-height: 1.2em;
+	font-weight: bold;
+	margin: 0% 2% 0% 0;
+	width: 25%;
+	float: left;
+}
+#download-builder span.component-desc {
+	font-size: 1.1em;
+	line-height: 1.2em;
+	width: 73%;
+	float: left;
+}
+#download-builder .version-area label > * {
+	float: left;
+}
+#download-builder .version-area label > input {
+	margin: 0.5em 0.5em 0.5em 0;
+}
+#download-builder span.version-title {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 0.5em 0.5em 0.5em 0;
+}
+#download-builder span.version-label {
+	color: #666666;
+	font-size: 1.1em;
+	margin: 0.5em 0;
+}
+@media all and (max-width: 400px) {
+	#download-builder .component-group-desc {
+		width: 96%;
+	}
+	#download-builder .component-group-list {
+		width: 96%;
+	}
+}
+#download-builder .advanced-settings h3 {
+    cursor: pointer;
+    display: block;
+    font-size: 1.1em;
+    margin-left: -3px;
+}
+#download-builder .advanced-settings-content {
+    padding-left: 15px;
+    width: 155px;
+}
+#download-builder .advanced-settings h3 span {
+    float: left;
+}
+#download-builder .advanced-settings label, #download-builder .advanced-settings input {
+    display: block;
+    float: none;
+    height: 1.4em;
+    margin: 5px 0 2px;
+    position: relative;
+}
+#download-builder .advanced-settings input {
+    width: 125px;
+}
+#download-builder .advanced-settings label {
+    margin-top: 10px;
+}
+#download-builder .advanced-settings label a {
+    position: absolute;
+    right: 0;
+    top: 1.9em;
+}
+#download-builder input[type=submit] {
+	background: url("images/download_button_on.png") repeat-x scroll 0 50% #222222;
+	border: 2px solid #AAAAAA;
+	color: #EEEEEE;
+	cursor: pointer;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 15px 0 0;
+	padding: 0.4em 0;
+	text-align: center;
+	width: 140px;
+}
+#download-builder input[type=submit]:hover {
+	background: none repeat scroll 0 0 #111111;
+	color: #FFFFFF;
+}
+.download-builder-dialog {
+	font-size: 10px;
+	min-width: 370px;
+}
+.field-help-content {
+	font-size: 10px;
+	max-width: 400px;
+}
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+	border-collapse: collapse;
+}
+.clearfix:after {
+	clear: both;
+}

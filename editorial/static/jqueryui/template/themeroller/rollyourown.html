@@ -1,0 +1,30 @@
+<!-- Download theme button -->
+<a href="/download" id="downloadTheme" class="corner-all"><span class="download-icon"></span><strong>Download</strong> theme</a>
+
+<form method="get" action="{{host}}/themeroller/" id="themeConfig">
+	<fieldset class="clearfix">
+		{{#each groups}}
+			{{#if isFontType}}
+				{{> rollyourown_group_font}}
+			{{/if}}
+
+			{{#if isCornerType}}
+				{{> rollyourown_group_corner}}
+			{{/if}}
+
+			{{#if isDefaultType}}
+				{{> rollyourown_group_default}}
+			{{/if}}
+
+			{{#if isModaloverlayType}}
+				{{> rollyourown_group_modaloverlay}}
+			{{/if}}
+
+			{{#if isDropshadowType}}
+				{{> rollyourown_group_dropshadow}}
+			{{/if}}
+		{{/each}}
+
+		<button type="submit" name="submit" id="submitBtn">Preview Changes</button>
+	</fieldset>
+</form>

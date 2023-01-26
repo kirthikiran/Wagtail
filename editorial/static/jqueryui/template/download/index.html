@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="https://code.jquery.com/ui/{{resources.jqueryuiVersion}}/themes/smoothness/jquery-ui.css">
+{{#if production}}
+	<link rel="stylesheet" href="/resources/download.css">
+{{else}}
+	<link rel="stylesheet" href="/app/download.css">
+{{/if}}
+<div id="download-builder" data-base-vars="{{baseVars}}" data-download-jqueryui-host="{{host}}" data-initial-components="{{components}}" data-lzma-worker="{{lzmaWorker}}">
+	<p class="bundle-links">
+		<strong>Quick downloads:</strong>
+		{{#join jqueryUis " | "}}
+			<a class="download-link" href="/resources/download/jquery-ui-{{this.pkg.version}}.zip">{{this.label}}</a> (<a href="/resources/download/jquery-ui-themes-{{this.pkg.version}}.zip">Themes</a>) ({{this.pkg.version}}: <em>for {{this.dependsOn}}</em>)
+		{{/join}}
+		<br>
+		<a class="download-link" href="/download/all/">All jQuery UI Downloads</a>
+	</p>
+	<form action="{{host}}/download" method="POST">
+		<div id="service-status"></div>
+		<div class="download-builder-header version-area">
+			<h2>Version</h2>
+			{{#each jqueryUis}}
+				<div class="field-pair">
+					<label class="clearfix">
+						<input type="radio" id="version-{{this.pkg.version}}" value="{{this.pkg.version}}" name="version"{{{isVersionChecked this}}}{{{isThereThemeFolder this}}}>
+						<span class="version-title">{{this.pkg.version}}</span>
+						<span class="version-label">({{this.label}}, for {{this.dependsOn}})</span>
+					</label>
+				</div>
+			{{/each}}
+		</div>
+		<div class="download-builder-header">
+			<h2>Components</h2>
+		</div>
+		<div class="components-area"></div>
+		<div class="download-builder-header">
+			<h2>Theme</h2>
+			<div class="theme-area"></div>
+		</div>
+		<input type="submit" class="ui-widget-content" value="Download">
+	</form>
+	<p>
+		If you're having trouble downloading a custom package or theme, please <a href="https://github.com/jquery/download.jqueryui.com/issues">report the issue on GitHub</a>.
+	</p>
+</div>
+
+<script src="https://code.jquery.com/ui/{{resources.jqueryuiVersion}}/jquery-ui.min.js"></script>
+{{#if production}}
+	<script src="/resources/download.all.min.js"></script>
+{{else}}
+	<script src="/external/eventEmitter/EventEmitter.js"></script>
+	<script src="/external/handlebars/handlebars.runtime.js"></script>
+	<script src="/template/download.js"></script>
+	<script src="/external/lzma-js/src/lzma.js"></script>
+	<script src="/app/hash.js"></script>
+	<script src="/app/querystring.js"></script>
+	<script src="/app/model.js"></script>
+	<script src="/app/download.js"></script>
+{{/if}}
