@@ -125,3 +125,8 @@ EditorialIndexPage.content_panels = [
 
 EditorialIndexPage.promote_panels = Page.promote_panels
 
+for i in range(1,10):
+    editorial_page = EditorialPage(title="Editorial Page " + str(i))
+    editorial_page.intro = "This is the intro for Editorial Page " + str(i)
+    editorial_page.body = "This is the body for Editorial Page " + str(i)
+    editorial_page.save_revision().publish()
